@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Website du lịch</title>
+</head>
+<body onload="LoadTheme()">
+    <header>
+        <img src="img/logo.jpg" width="100px" height="100px" alt="">
+        <div>
+            <b class="hotline"><i class="fa-solid fa-square-phone"></i>HotLine: 094648264113</b>
+            <div class="color">
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <i class="bi bi-list"></i>
+    </div>
+    <nav>
+        <a href="">Trang chủ</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Đăng nhập</a>
+        <a href="">Đăng ký</a>
+        <a href="">Liên hệ</a>
+    </nav>
+    <div class="slide">
+        <img id="banner" src="img/10+ Amazing Places To Visit In Da Lat Vietnam.png" alt="" width="100%">
+        <i class="bi bi-arrow-left" onclick="prev()"></i>
+        <i class="bi bi-arrow-right" onclick="next()"></i>
+        <div class="list">
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+    <main>
+        <h2>Tour du lịch trong nước</h2>
+        <section class="list-tour"> 
+            <article>
+                <img src="img/Đà Lạt.jpg"  alt="">
+                <p><b>Đà Lạt</b></p>
+                <p>20.000.000 đồng</p>
+            </article>
+            <article>
+                <img src="img/Đà Lạt.jpg"  alt="">
+                <p><b>Đà Lạt</b></p>
+                <p>20.000.000 đồng</p>
+            </article>
+            <article>
+                <img src="img/Đà Lạt.jpg"  alt="">
+                <p><b>Đà Lạt</b></p>
+                <p>20.000.000 đồng</p>
+            </article>
+        </section>
+        <h2>Đánh giá của khách</h2>
+        <section class="feedback">
+            <article>
+                <img src="img/GLITCH.png" alt="">
+                <p>R</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </p>
+                <span>Sản phẩm rất tốt</span>
+            </article>
+            <article>
+                <img src="img/Premium Vector _ Black panther logo mascot.jpg" alt="">
+                <p>T</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </p>
+                <span>Sản phẩm rất tốt</span>
+            </article>
+            <article>
+                <img src="img/d99a182f-60ed-473d-b55d-a269413d54e6.jpg" alt="">
+                <p>V</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </p>
+                <span>Sản phẩm rất tốt</span>
+            </article>
+        </section>
+        <section class="banner">
+            <img src="img/England.jpg" alt="">
+        </section>
+        <h2>Tour du lịch quốc tế</h2>
+        <section class="grid-container">
+            <!-- <div class="item1 item">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item2 item">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item3 item">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item4 item">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item5">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div> -->
+            <div class="item-1 item">
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item-2 item">item2
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item-3 item">item3
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item-4 item">item4
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+            <div class="item-5 item">item5
+                <img src="img/Autralia.jpg" alt="">
+                <p>ÚC</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <div class="lienhe">
+                <h2>Liên hệ</h2>
+                <hr />
+                <p>Thành phố Đà Lạt</p>
+                <p>Email: tranphamtienphat2828@gmail.com</p>
+            </div>
+            <div class="map">
+                <h2>Bản đồ</h2>
+                <hr />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249856.8173520321!2d108.28590645314128!3d11.904198986471016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112fef20988b1%3A0xad5f228b672bf930!2zVHAuIMSQw6AgTOG6oXQsIEzDom0gxJDhu5NuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1685068206491!5m2!1svi!2s" width="100px" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="connect">
+                <h2><b>Kết nối</b></h2>
+                <hr />
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <p><b> Đăng ký nhận tin khuyến mãi</b></p>
+                <input type="text" placeholder="Nhập email"
+                width="90%">
+                <button class="btn">Đăng ký</button>
+            </div>
+        </section>
+    </footer>
+    <img class="zalo" src="img/zalo-logo-B0A0B2B326-seeklogo.com.png" width="100px" height="100px" alt="">
+    <img class="messenger" src="img/Facebook_Messenger_logo_2020.svg" width="100px" height="100px" alt="">
+   
+     <canvas id="myCanvas" width="680" height="550" style="border:2px solid"></canvas>
+
+    </body>
+    <link rel="stylesheet" href="main.js">
+    <script>
+        //Menu
+$(document).ready(function() {
+    $(".menu").click(function(){
+        $("nav").slideToggle();
+    })
+})
+//slideshow
+var hinh=[
+    'img/10+ Amazing Places To Visit In Da Lat Vietnam.png',
+    'img/Đà Lạt.jpg',
+    'img/Các hòn đảo tuyệt đẹp không thể bỏ lỡ khi du lịch Vịnh Hạ Long -  RiverTour_vn.jpg',
+];
+var index=0;
+function prev(){
+    index--;
+    if(index<0) index=hinh.length-1;
+    document.getElementById('banner').src=hinh[index];
+    document.getElementById('0').style.color='brown';
+    document.getElementById('1').style.color='brown';
+    document.getElementById('2').style.color='brown';
+    document.getElementById(index).style.color='aqua';
+
+}
+function next(){
+    index++;
+    if(index=hinh.length) index=0;
+    document.getElementById('banner').src=hinh[index];
+    document.getElementById('0').style.color='brown';
+    document.getElementById('1').style.color='brown';
+    document.getElementById('2').style.color='brown';
+    document.getElementById(index).style.color='aqua';
+
+}
+setInterval('next()',2000);
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+
+//smiley
+context.fillStyle = 'LawnGreen';
+context.strokeStyle = 'black';
+context.lineWidth = 5;
+context.beginPath();
+context.arc(320, 240, 200, 0, 2 * Math.PI);
+context.fill();
+context.stroke();
+context.closePath();
+
+//eyes
+context.fillStyle = 'cyan';
+context.beginPath();
+context.arc(270, 175, 30, 0, 2 * Math.PI);
+context.fill();
+context.stroke();
+context.closePath();
+
+context.beginPath();
+context.arc(370, 175, 30, 0, 2 * Math.PI);
+context.fill();
+context.stroke();
+context.closePath();
+
+//mouth
+context.strokeStyle = 'magenta';
+context.lineWidth = 5;
+context.beginPath();
+context.arc(320, 240, 150, 0, -1 * Math.PI);
+context.stroke();
+context.closePath();
+
+
+ context.font='50px Arial Black';
+ context.fillText("Smile!", 230,500);
+//color
+var c1=document.getElementById('c1');
+var c2=document.getElementById('c2');
+var c3=document.getElementById('c3');
+const root=document.querySelector(':root');
+
+c1.addEventListener('click',function(){
+    root.style.setProperty('--color2', '#009943');
+    localStorage.setItem('pickColor','#009943');
+})
+c2.addEventListener('click',function(){
+    root.style.setProperty('--color2', '#e2bb10');
+    localStorage.setItem('pickColor','#e2bb10');
+})
+c3.addEventListener('click',function(){
+    root.style.setProperty('--color2', '#0fe3ea');
+    localStorage.setItem('pickColor','#0fe3ea');
+})
+function loadTheme(){
+    if (localStorage.getItem('pickColor')!='') {
+        root.style.setProperty('--color2', localStorage.setItem('pickColor'));
+    }
+}
+    </script>
+</html>
